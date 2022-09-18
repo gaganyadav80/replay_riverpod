@@ -10,7 +10,7 @@
 
 An extension to [package:riverpod](https://github.com/rrousselGit/riverpod) which adds automatic undo and redo support to riverpod states.
 
-Like [package:bloc](https://pub.dev/packages/riverpod).
+Like [package:replay_bloc](https://pub.dev/packages/replay_bloc).
 
 **Learn more at [riverpod.dev](https://riverpod.dev)!**
 
