@@ -1,0 +1,20 @@
+name: replay_riverpod
+description: An extension to the flutter_riverpod library which adds support for undo and redo.
+version: 0.0.1-dev.1
+repository: https://github.com/gaganyadav80/replay_riverpod
+issue_tracker: https://github.com/gaganyadav80/replay_riverpod/issues
+homepage: https://github.com/gaganyadav80/replay_riverpod
+
+environment:
+  sdk: ">=2.16.0 <3.0.0"
+  flutter: 3.0.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^1.0.4
+
+dev_dependencies:
+  test: ^1.16.0
+
+flutter:
