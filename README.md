@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://pub.dev/packages/replay_riverpod"><img src="https://img.shields.io/pub/v/replay_riverpod.svg" alt="Pub"></a>
+  <a href="https://pub.dev/packages/replay_provider"><img src="https://img.shields.io/pub/v/replay_provider.svg" alt="Pub"></a>
   <a href="https://github.com/gaganyadav80/replay_riverpod"><img src="https://img.shields.io/github/stars/gaganyadav80/replay_riverpod.svg?style=flat&logo=github&colorB=deeppink&label=stars" alt="Star on Github"></a>
   <a href="https://github.com/tenhobi/effective_dart"><img src="https://img.shields.io/badge/style-effective_dart-40c4ff.svg" alt="style: effective dart"></a>
   <a href="https://docs.flutter.dev/development/data-and-backend/state-mgmt/options#riverpod"><img src="https://img.shields.io/badge/flutter-website-deepskyblue.svg" alt="Flutter Website"></a>
