@@ -7,7 +7,7 @@ homepage: https://github.com/gaganyadav80/replay_riverpod
 
 environment:
   sdk: ">=2.16.0 <3.0.0"
-  flutter: 3.0.5
+  flutter: '>=3.0.5'
 
 dependencies:
   flutter:
