@@ -55,7 +55,7 @@ class CounterPage extends ConsumerWidget {
         actions: [
           Consumer(
             builder: (context, ref, child) {
-              final counter = ref.read(counterProvider.notifier);
+              final counter = ref.read(_counterProvider.notifier);
               return IconButton(
                 icon: const Icon(Icons.undo),
                 onPressed: counter.canUndo ? counter.undo : null,
@@ -64,7 +64,7 @@ class CounterPage extends ConsumerWidget {
           ),
           Consumer(
             builder: (context, ref, child) {
-              final counter = ref.read(counterProvider.notifier);
+              final counter = ref.read(_counterProvider.notifier);
               return IconButton(
                 icon: const Icon(Icons.redo),
                 onPressed: counter.canRedo ? counter.redo : null,
@@ -76,7 +76,7 @@ class CounterPage extends ConsumerWidget {
       body: Center(
         child: Consumer(
           builder: (context, ref, child) {
-            final state = ref.watch(counterProvider);
+            final state = ref.watch(_counterProvider);
             return Text('$state', style: textTheme.headline2);
           },
         ),
@@ -88,21 +88,21 @@ class CounterPage extends ConsumerWidget {
           FloatingActionButton(
             child: const Icon(Icons.add),
             onPressed: () {
-              ref.read(counterProvider.notifier).increment();
+              ref.read(_counterProvider.notifier).increment();
             },
           ),
           const SizedBox(height: 4),
           FloatingActionButton(
             child: const Icon(Icons.remove),
             onPressed: () {
-              ref.read(counterProvider.notifier).decrement();
+              ref.read(_counterProvider.notifier).decrement();
             },
           ),
           const SizedBox(height: 4),
           FloatingActionButton(
             child: const Icon(Icons.delete_forever),
             onPressed: () {
-              ref.read(counterProvider.notifier).reset();
+              ref.read(_counterProvider.notifier).reset();
             },
           ),
         ],
@@ -130,6 +130,6 @@ class CounterNotifier extends ReplayStateNotifier<int> {
   void reset() => state = 0;
 }
 
-final counterProvider = StateNotifierProvider<CounterNotifier, int>(
+final _counterProvider = StateNotifierProvider<CounterNotifier, int>(
   (ref) => CounterNotifier(),
 );
